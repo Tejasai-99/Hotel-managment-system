@@ -20,8 +20,8 @@ class hotel:
                 print("sorry, delux rooms are not available")
                 return
         if roomtype==3:
-            if self.available_rooms['exec']:
-                room_no=self.available_rooms['exec'].pop(0)
+            if self.available_rooms['execu']:
+                room_no=self.available_rooms['execu'].pop(0)
             else:
                 print("sorry, exec rooms are not available")
                 return
@@ -92,7 +92,7 @@ class hotel:
            elif room_type==2:
                self.available_rooms['delux'].append(room_number)
            elif room_type==3:
-               self.available_rooms['exec'].append(room_number)
+               self.available_rooms['execu'].append(room_number)
         
         total=self.rooms[room_number]['roomservice']
         roombill=self.roomprice[room_type]
