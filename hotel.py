@@ -46,7 +46,7 @@ class hotel:
 
             
             while 1:
-                select=int(input("want do you want sir(to exit enter 6): "))
+                select=int(input("what do you want sir(to exit enter 6): "))
                 if select == 1:
                     quantity=int(input("enter the quantity "))
                     self.rooms[room_no]['roomservice']+=20*quantity
@@ -73,9 +73,9 @@ class hotel:
             print("no rooms are occupied at the moment")
         else:
             print("Occupied Rooms: ")
-            print("--------------------")
-            print("Room no. Name    Phone")
-            print("---------------------")
+            print("--------------------------------------------------------")
+            print("Room no.    Name      Phone         place")
+            print("--------------------------------------------------------")
             for room,details in self.rooms.items():
                 print(room,'\t',details['name'],'\t' ,details['phone'] ,'\t',details['address'])
 
