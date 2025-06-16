@@ -6,7 +6,7 @@ class hotel:
         self.roomprice={1:2000, 2:4000, 3:6000}
 
     def check_in(self,name,address,ph):
-        roomtype=int(input("roomtype\n1. Std \n2. Delux \n.3. Executive  \nSelect the room type: "))
+        roomtype=int(input("roomtype\n1. Std \n2. Delux \n3. Executive  \nSelect the room type: "))
         if roomtype==1:
             if self.available_rooms['std']:
                 room_no=self.available_rooms['std'].pop(0)
